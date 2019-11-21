@@ -2,16 +2,17 @@ import React from "react";
 import { observer } from "mobx-react";
 
 // NativeBase Components
-import { List, Content, Button, Text, Spinner } from "native-base";
+// import { List, Content, Button, Text, Spinner } from "native-base";
+import { List, Content, Spinner } from "native-base";
 
 // Stores
-import authStore from "../../Stores/authStore";
+// import authStore from "../../Stores/authStore";
 import coffeeStore from "../../Stores/coffeeStore";
 
 // Component
 import CoffeeItem from "./CoffeeItem";
 import CartButton from "../Buttons/CartButton";
-import Logout from "../Buttons/AuthButton";
+import Logout from "../Authentication/Logout";
 
 const CoffeeList = ({ navigation }) => {
   if (coffeeStore.loading) return <Spinner />;

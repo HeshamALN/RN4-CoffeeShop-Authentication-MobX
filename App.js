@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Spinner, Container } from "native-base";
 
 // Components
-import AppContainer from "./Navigation";
+// import AppContainer from "./Navigation";
+import MySwitchNav from "./Navigation/switchNav";
 
 export default class App extends Component {
   state = {
@@ -23,7 +24,7 @@ export default class App extends Component {
     }
     return (
       <Container>
-        <AppContainer />
+        <MySwitchNav />
       </Container>
     );
   }
